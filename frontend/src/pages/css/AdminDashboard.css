@@ -1,0 +1,68 @@
+.admin-card {
+  border-radius: 18px;
+  border: none;
+  background: #f8f9fa;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.admin-table th, .admin-table td {
+  vertical-align: middle;
+  font-size: 1.05rem;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.admin-table tr {
+  transition: background 0.2s;
+}
+
+.admin-table tr:hover {
+  background: #e3e9f7 !important;
+}
+
+/* Make question text column wider and allow wrapping */
+.admin-table .question-text {
+  max-width: 500px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+@media (max-width: 900px) {
+  .admin-card {
+    max-width: 98vw !important;
+    margin: 0 1vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-table {
+    font-size: 0.95rem;
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+  .admin-table thead, .admin-table tbody, .admin-table tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .admin-table th, .admin-table td {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.3rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+
+.dark-mode .admin-card {
+  background: #23272f !important;
+  color: #fff;
+  border: 1px solid #444;
+}
+.dark-mode .admin-table th, .dark-mode .admin-table td {
+  background: #2c3240 !important;
+  color: #fff !important;
+  border-color: #444 !important;
+} 

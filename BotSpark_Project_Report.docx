@@ -1,0 +1,194 @@
+BotSpark: AI Interview Bot
+
+---
+
+Title Page
+===========
+BotSpark: AI Interview Bot
+A Full-Stack AI-Powered Interview Simulation Platform
+
+Prepared by: [Your Name]
+Course: Artificial Intelligence
+Semester: 4th
+Date: [Presentation Date]
+
+---
+
+Table of Contents
+==================
+1. Introduction
+2. Problem Statement
+3. Project Objectives
+4. System Architecture
+5. Technology Stack
+6. Features
+   6.1 Candidate Features
+   6.2 Admin Features
+7. Implementation Details
+   7.1 Frontend
+   7.2 Backend
+8. Key Code and Design Decisions
+9. Testing and Validation
+10. Screenshots and Diagrams
+11. Challenges and Solutions
+12. Future Work
+13. Conclusion
+14. References
+
+---
+
+1. Introduction
+================
+BotSpark is an AI-powered interview simulation platform designed to help candidates practice interviews and allow administrators to manage questions, monitor sessions, and analyze candidate performance. The system supports voice input/output, session analytics, and robust admin controls, providing a modern, user-friendly experience for both candidates and admins.
+
+---
+
+2. Problem Statement
+====================
+Traditional interview preparation methods lack interactivity, real-time feedback, and scalability. Candidates often struggle to find realistic practice environments, while organizations need efficient tools to manage and analyze interview data. There is a need for a platform that simulates real interview scenarios, supports voice interaction, and provides comprehensive analytics for administrators.
+
+---
+
+3. Project Objectives
+=====================
+- Develop a full-stack web application for AI-powered interview simulation.
+- Enable candidates to practice interviews with voice/text input and receive instant feedback.
+- Provide admins with tools to manage questions, monitor candidate progress, and analyze performance.
+- Ensure secure authentication, role-based access, and a modern, responsive UI.
+
+---
+
+4. System Architecture
+======================
+- **Frontend:** React SPA with Bootstrap, voice utilities, and responsive design.
+- **Backend:** Django REST Framework with JWT authentication, SQLite database.
+- **APIs:** RESTful endpoints for users, questions, interviews, and analytics.
+- **Deployment:** Local development, ready for cloud deployment.
+
+[Insert System Architecture Diagram Here]
+
+---
+
+5. Technology Stack
+===================
+- **Frontend:** React, React Bootstrap, CSS, Web Speech API
+- **Backend:** Django, Django REST Framework, JWT, SQLite
+- **Other:** CORS, CSV import/export, RESTful APIs
+
+---
+
+6. Features
+===========
+6.1 Candidate Features
+----------------------
+- Registration with username, email, and password
+- Login and secure session management
+- Chat-like interview UI with animated Q&A bubbles
+- Voice input (speech-to-text) and output (text-to-speech)
+- 10-question interview, CSP-based selection, time limits
+- Session summary and feedback
+- One interview per candidate unless unblocked by admin
+- Consistent branding and modern UI
+
+6.2 Admin Features
+-------------------
+- Dashboard with tabs for Questions, Candidates, and Analytics
+- Add, edit, delete, and bulk import/export questions (CSV)
+- Responsive tables with word-wrapping and wide layouts
+- View all registered candidates, their sessions, and analytics
+- Unblock candidates to allow retakes
+- Remove all interview records for a candidate (and block them until unblocked)
+- Download candidate summaries as CSV
+- View overall stats, topic-wise performance, and most-missed questions
+
+---
+
+7. Implementation Details
+=========================
+7.1 Frontend
+------------
+- React SPA with routing and protected routes
+- Bootstrap for layout and components
+- Custom CSS for branding and responsiveness
+- Voice utilities using Web Speech API
+- API integration for authentication, questions, and session management
+- Animated chat UI for interview simulation
+
+7.2 Backend
+-----------
+- Django REST Framework for API endpoints
+- JWT authentication for secure access
+- User model extended with role, email, interview status, and block status
+- Question model with text, topic, difficulty, and time_required
+- Interview session and session question models for tracking progress
+- Admin endpoints for analytics, candidate management, and CSV import/export
+
+---
+
+8. Key Code and Design Decisions
+===============================
+- Used JWT for stateless, secure authentication
+- Role-based access control for candidate/admin separation
+- CSP-based question selection for balanced interviews
+- Responsive, accessible UI with Bootstrap and custom CSS
+- Voice input/output for realistic interview experience
+- Admin controls for unblocking and removing candidate records
+- Email field added to user model and registration for better management
+
+---
+
+9. Testing and Validation
+=========================
+- Manual testing of all user flows (registration, login, interview, admin actions)
+- Validation of form inputs and error handling
+- Linter/ESLint and type checking for code quality
+- Responsive design tested on multiple devices
+- Backend tested with API tools (Postman)
+
+---
+
+10. Screenshots and Diagrams
+============================
+[Insert screenshots of login, registration, interview, admin dashboard, analytics, etc.]
+[Insert system architecture and data model diagrams]
+
+---
+
+11. Challenges and Solutions
+============================
+- **CORS and API endpoint mismatches:** Fixed by proper configuration and consistent API paths.
+- **Voice input/output integration:** Used Web Speech API and handled browser compatibility.
+- **Table responsiveness:** Custom CSS for word-wrapping and wide layouts.
+- **One-interview enforcement:** Backend logic and admin unblock controls.
+- **Email management:** Added email to registration, user model, and admin dashboard.
+- **Type/linter errors:** Fixed with type hints, ignores, and code cleanup.
+
+---
+
+12. Future Work
+===============
+- Email verification and password reset
+- AI-powered feedback on answers
+- Support for multiple interview rounds
+- Advanced analytics and reporting
+- Cloud deployment and scaling
+
+---
+
+13. Conclusion
+==============
+BotSpark is a robust, modern, and user-friendly AI interview platform with full admin control and analytics. It provides a realistic interview experience for candidates and powerful management tools for admins. The project is ready for demonstration and further development.
+
+---
+
+14. References
+==============
+- Django REST Framework documentation
+- React documentation
+- Bootstrap documentation
+- Web Speech API documentation
+- [Any other resources used]
+
+---
+
+[End of Report] 
