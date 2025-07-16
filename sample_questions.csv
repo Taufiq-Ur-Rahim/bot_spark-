@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 text,topic,difficulty,time_required
 "What is your biggest strength and how do you use it in your work?","Personal","easy",60
 "Describe a challenging project you worked on and how you solved it.","Problem Solving","medium",90
@@ -14,21 +13,4 @@ text,topic,difficulty,time_required
 "How do you stay updated with the latest technology trends?","Learning","medium",75
 "Describe a situation where you had to explain a technical concept to a non-technical person.","Communication","medium",90
 "What is your experience with cloud platforms like AWS or Azure?","Cloud Computing","medium",90
-=======
-text,topic,difficulty,time_required
-"What is your biggest strength and how do you use it in your work?","Personal","easy",60
-"Describe a challenging project you worked on and how you solved it.","Problem Solving","medium",90
-"What programming language are you most comfortable with and why?","Technical","easy",60
-"Explain the difference between REST and GraphQL APIs.","Web Development","medium",90
-"How do you handle working with difficult team members?","Teamwork","medium",75
-"What is your approach to debugging a complex bug?","Technical","medium",90
-"Describe a time when you had to learn a new technology quickly.","Learning","easy",60
-"What is your experience with version control systems like Git?","Technical","easy",60
-"How do you prioritize tasks when you have multiple deadlines?","Time Management","medium",75
-"What is your understanding of microservices architecture?","Architecture","hard",120
-"What motivates you to work in the tech industry?","Personal","easy",60
-"How do you stay updated with the latest technology trends?","Learning","medium",75
-"Describe a situation where you had to explain a technical concept to a non-technical person.","Communication","medium",90
-"What is your experience with cloud platforms like AWS or Azure?","Cloud Computing","medium",90
->>>>>>> 5ebdf10 (Initial commit)
-"How do you handle criticism of your code or work?","Professional","easy",60 
+"How do you handle criticism of your code or work?","Professional","easy",60
